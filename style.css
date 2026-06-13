@@ -1,0 +1,79 @@
+/* Voltio web — warm "Mini Motorways" aesthetic */
+:root {
+  --cream: #f5efe6;
+  --cream-lo: #efe7da;
+  --card: #ffffff;
+  --ink: #2b2e42;
+  --muted: #6f6a61;
+  --amber: #ffb803;
+  --amber-dk: #e49200;
+  --teal: #2ec4b5;
+  --coral: #f06361;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--cream);
+  color: var(--ink);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap { max-width: 720px; margin: 0 auto; padding: 32px 22px 80px; }
+
+header.hero { text-align: center; padding: 24px 0 8px; }
+
+.logo {
+  width: 84px; height: 84px; margin: 0 auto 12px;
+  display: flex; align-items: center; justify-content: center;
+  background: radial-gradient(closest-side, rgba(255,209,102,.55), rgba(255,209,102,0));
+}
+.logo svg { width: 64px; height: 64px; }
+
+h1 { font-weight: 900; font-size: 2.6rem; margin: 0; letter-spacing: -.5px; }
+.tagline { color: var(--muted); font-weight: 600; margin-top: 2px; }
+
+.card {
+  background: var(--card);
+  border-radius: 22px;
+  padding: 22px 24px;
+  margin: 18px 0;
+  box-shadow: 0 6px 20px rgba(43,46,66,.07);
+}
+
+h2 { font-weight: 800; font-size: 1.4rem; margin: 4px 0 10px; }
+h3 { font-weight: 800; font-size: 1.05rem; margin: 18px 0 4px; }
+p, li { color: #44434f; }
+ul { padding-left: 20px; }
+
+a { color: var(--amber-dk); font-weight: 700; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.btn {
+  display: inline-block;
+  background: var(--amber);
+  color: #fff !important;
+  font-weight: 800;
+  padding: 13px 26px;
+  border-radius: 999px;
+  box-shadow: 0 6px 16px rgba(255,184,3,.4);
+  text-decoration: none;
+}
+.btn:hover { filter: brightness(1.03); text-decoration: none; }
+
+.lang-switch { text-align: center; margin: 8px 0 4px; }
+.lang-switch button {
+  font-family: inherit; font-weight: 800; font-size: .9rem;
+  border: none; cursor: pointer; padding: 6px 14px; margin: 0 3px;
+  border-radius: 999px; background: rgba(43,46,66,.08); color: var(--ink);
+}
+.lang-switch button.active { background: var(--teal); color: #fff; }
+
+footer { text-align: center; color: var(--muted); font-size: .9rem; margin-top: 28px; }
+footer a { margin: 0 8px; }
+
+body.lang-es .en { display: none; }
+body.lang-en .es { display: none; }
