@@ -4,72 +4,61 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Voltios — Aprende circuitos jugando</title>
-<meta name="description" content="Voltios: juego de puzzles para aprender electricidad y circuitos de forma visual. Sin anuncios ni rastreo.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<meta name="description" content="Voltios 2.0: 10 mundos y 78 niveles para aprender electricidad. Laboratorio se abre tras el mundo 5. Compra única, sin suscripciones ni anuncios.">
+<link rel="canonical" href="https://inoguerols.github.io/voltios-web/">
+<link rel="icon" type="image/png" href="app-icon.png">
+<link rel="apple-touch-icon" href="app-icon.png">
 <link rel="stylesheet" href="style.css">
 </head>
 <body class="lang-es">
 <div class="wrap">
-  <div class="lang-switch">
-    <button data-lang="es" onclick="setLang('es')">Español</button>
-    <button data-lang="en" onclick="setLang('en')">English</button>
-  </div>
-
+  <nav class="lang-switch" aria-label="Idioma / Language">
+    <button type="button" lang="es" data-lang="es" aria-pressed="true" onclick="setLang('es')">Español</button>
+    <button type="button" lang="en" data-lang="en" aria-pressed="false" onclick="setLang('en')">English</button>
+  </nav>
   <header class="hero">
-    <div class="logo">
-      <svg viewBox="0 0 100 100" aria-hidden="true">
-        <path d="M10 56 H28 M72 56 H90" fill="none" stroke="#ffb803" stroke-width="6" stroke-linecap="round"/>
-        <path d="M28 56 L60 37" fill="none" stroke="#2ec4b5" stroke-width="9" stroke-linecap="round"/>
-        <circle cx="28" cy="56" r="8" fill="#2ec4b5"/>
-        <circle cx="72" cy="56" r="8" fill="#2ec4b5"/>
-      </svg>
-    </div>
+    <img class="logo" src="app-icon.png" width="84" height="84" alt="">
     <h1>Voltios</h1>
-    <p class="tagline">
-      <span class="es">Construye circuitos, enciende el mundo</span>
-      <span class="en">Build circuits, light up the world</span>
-    </p>
+    <p class="tagline"><span class="es" lang="es">Construye circuitos, enciende el mundo</span><span class="en" lang="en">Build circuits, light up the world</span></p>
+    <p><a class="btn" href="https://apps.apple.com/es/app/voltios-puzzles-de-circuitos/id6779986359"><span class="es" lang="es">Ver en App Store</span><span class="en" lang="en">View on the App Store</span></a></p>
+    <p class="muted"><span class="es" lang="es">iPhone y iPad · iOS/iPadOS 17 o posterior</span><span class="en" lang="en">iPhone and iPad · iOS/iPadOS 17 or later</span></p>
   </header>
-
-  <div class="card">
-    <div class="es">
-      <h2>¿Qué es Voltios?</h2>
-      <p>Voltios es un juego de puzzles para aprender electricidad de forma visual y
-      divertida. Arrastra cables, cierra el circuito y mira cómo la corriente cobra vida:
-      la bombilla se enciende, el motor gira, el zumbador suena.</p>
-      <p>6 mundos y 41 niveles que van de encender tu primera bombilla a dominar la ley de
-      Ohm con un multímetro. Pensado para toda la familia: <strong>sin anuncios, sin
-      recopilación de datos y funciona sin conexión</strong>.</p>
-    </div>
-    <div class="en">
-      <h2>What is Voltios?</h2>
-      <p>Voltios is a puzzle game that teaches electricity in a visual, playful way. Drag
-      wires, close the circuit and watch the current come alive: the bulb lights, the
-      motor spins, the buzzer sounds.</p>
-      <p>6 worlds and 41 levels, from lighting your first bulb to mastering Ohm's law with
-      a multimeter. Made for the whole family: <strong>no ads, no data collection, works
-      offline</strong>.</p>
-    </div>
-  </div>
-
-  <div class="card" style="text-align:center">
-    <div class="es">
-      <h2>Soporte</h2>
-      <p>¿Dudas o problemas? Escríbenos y te ayudamos.</p>
-    </div>
-    <div class="en">
-      <h2>Support</h2>
-      <p>Questions or problems? Get in touch and we'll help.</p>
-    </div>
-    <p><a class="btn" href="mailto:ignacionoguerol@gmail.com">ignacionoguerol@gmail.com</a></p>
-    <p><a href="support.html"><span class="es">Preguntas frecuentes</span><span class="en">Frequently asked questions</span></a></p>
-  </div>
-
+  <main id="content">
+    <section class="card">
+      <div class="es" lang="es">
+        <h2>Aprende conectando</h2>
+        <p>Arrastra cables, cierra interruptores y observa qué cambia: una bombilla se enciende, un motor gira o un fusible protege el circuito. Experimenta con serie y paralelo y explora la ley de Ohm con el multímetro.</p>
+        <h3>10 mundos, 78 niveles</h3>
+        <p>Voltios 2.0 conserva los 68 niveles originales y añade 10 en <strong>Laboratorio</strong>, que se abre al completar el mundo 5. El contenido está incluido en la compra de la app; los niveles se abren siguiendo la progresión del juego.</p>
+        <p>Explicaciones, pistas y un reto diario para practicar a tu ritmo. Disponible en español e inglés.</p>
+      </div>
+      <div class="en" lang="en">
+        <h2>Learn by connecting</h2>
+        <p>Drag wires, close switches and watch what changes: a bulb lights up, a motor spins or a fuse protects the circuit. Experiment with series and parallel circuits and explore Ohm's law with the multimeter.</p>
+        <h3>10 worlds, 78 levels</h3>
+        <p>Voltios 2.0 keeps the original 68 levels and adds 10 in <strong>Laboratory</strong>, which opens after completing World 5. All content is included in the app purchase; levels open through gameplay progression.</p>
+        <p>Explanations, hints and a daily challenge let you practise at your own pace. Available in English and Spanish.</p>
+      </div>
+    </section>
+    <section class="card">
+      <div class="es" lang="es">
+        <h2>Todo el juego, una sola compra</h2>
+        <p>Sin suscripciones ni anuncios. No necesitas crear una cuenta de Voltios. El juego funciona sin conexión; iCloud, Game Center y el envío de analítica requieren conexión.</p>
+        <p>El progreso se sincroniza mediante iCloud cuando está disponible. Game Center es opcional y mantiene los logros de la campaña original. TelemetryDeck proporciona analítica de interacción con identificadores anonimizados, sin seguimiento publicitario.</p>
+        <p><a href="privacy.html">Cómo se tratan los datos</a> · <a href="support.html">Ayuda y preguntas frecuentes</a></p>
+      </div>
+      <div class="en" lang="en">
+        <h2>One purchase, no in-app purchases</h2>
+        <p>No subscriptions or ads. No Voltios account required. Gameplay works offline; iCloud, Game Center and sending analytics require a connection.</p>
+        <p>Progress syncs through iCloud when available. Game Center is optional and retains the original campaign achievements. TelemetryDeck provides interaction analytics with anonymized identifiers, without advertising tracking.</p>
+        <p><a href="privacy.html">How data is handled</a> · <a href="support.html">Help and frequently asked questions</a></p>
+      </div>
+    </section>
+  </main>
   <footer>
-    <a href="privacy.html"><span class="es">Privacidad</span><span class="en">Privacy</span></a>
-    <a href="support.html"><span class="es">Soporte</span><span class="en">Support</span></a>
-    <div style="margin-top:8px">© 2026 Voltios</div>
+    <a href="privacy.html"><span class="es" lang="es">Privacidad</span><span class="en" lang="en">Privacy</span></a>
+    <a href="support.html"><span class="es" lang="es">Soporte</span><span class="en" lang="en">Support</span></a>
+    <p>© 2026 Voltios</p>
   </footer>
 </div>
 <script src="script.js"></script>

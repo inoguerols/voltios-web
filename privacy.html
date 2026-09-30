@@ -4,80 +4,68 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Voltios — Privacidad / Privacy</title>
-<meta name="description" content="Política de privacidad de Voltios: no se recopilan datos.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<meta name="description" content="Privacidad de Voltios: progreso local, iCloud, Game Center opcional y analítica de TelemetryDeck sin seguimiento publicitario.">
+<link rel="canonical" href="https://inoguerols.github.io/voltios-web/privacy.html">
+<link rel="icon" type="image/png" href="app-icon.png">
+<link rel="apple-touch-icon" href="app-icon.png">
 <link rel="stylesheet" href="style.css">
 </head>
 <body class="lang-es">
 <div class="wrap">
-  <div class="lang-switch">
-    <button data-lang="es" onclick="setLang('es')">Español</button>
-    <button data-lang="en" onclick="setLang('en')">English</button>
-  </div>
-
+  <nav class="lang-switch" aria-label="Idioma / Language">
+    <button type="button" lang="es" data-lang="es" aria-pressed="true" onclick="setLang('es')">Español</button>
+    <button type="button" lang="en" data-lang="en" aria-pressed="false" onclick="setLang('en')">English</button>
+  </nav>
   <header class="hero">
-    <div class="logo">
-      <svg viewBox="0 0 100 100" aria-hidden="true">
-        <path d="M10 56 H28 M72 56 H90" fill="none" stroke="#ffb803" stroke-width="6" stroke-linecap="round"/>
-        <path d="M28 56 L60 37" fill="none" stroke="#2ec4b5" stroke-width="9" stroke-linecap="round"/>
-        <circle cx="28" cy="56" r="8" fill="#2ec4b5"/>
-        <circle cx="72" cy="56" r="8" fill="#2ec4b5"/>
-      </svg>
-    </div>
-    <h1><span class="es">Privacidad</span><span class="en">Privacy</span></h1>
+    <img class="logo" src="app-icon.png" width="84" height="84" alt="">
+    <h1><span class="es" lang="es">Privacidad</span><span class="en" lang="en">Privacy</span></h1>
   </header>
-
-  <div class="card">
-    <div class="es">
-      <h2>Política de privacidad de Voltios</h2>
-      <p><strong>Voltios no recopila, almacena ni comparte ningún dato personal.</strong></p>
-      <ul>
-        <li><strong>Sin cuentas</strong>: no necesitas registrarte ni iniciar sesión.</li>
-        <li><strong>Sin rastreo ni anuncios</strong>: la app no incluye analítica,
-        publicidad ni rastreadores de terceros.</li>
-        <li><strong>Sin conexión</strong>: Voltios funciona completamente sin internet y no
-        envía información a ningún servidor.</li>
-        <li><strong>En tu dispositivo</strong>: tu progreso (estrellas, niveles completados)
-        y tus ajustes (sonido, vibración) se guardan únicamente en tu dispositivo.</li>
-        <li><strong>Compras</strong>: la compra para desbloquear el juego completo la
-        procesa Apple mediante StoreKit. Apple gestiona el pago; Voltios no accede a tus
-        datos de pago.</li>
-        <li><strong>Menores</strong>: la app es apta para toda la familia y no recopila
-        datos de nadie, incluidos los menores. La compra está protegida por una puerta
-        parental.</li>
-      </ul>
-      <p>Si tienes dudas, escríbenos a
-      <a href="mailto:ignacionoguerol@gmail.com">ignacionoguerol@gmail.com</a>.</p>
-      <p style="color:#6f6a61">Última actualización: junio de 2026.</p>
+  <main id="content" class="card">
+    <div class="es" lang="es">
+      <h2>Cómo trata los datos Voltios</h2>
+      <p>Voltios no exige crear una cuenta propia y no incluye anuncios ni seguimiento publicitario. Para jugar, guardar progreso y mejorar el juego se utilizan los datos y servicios descritos a continuación.</p>
+      <h3>Progreso y preferencias</h3>
+      <p>El progreso, incluidos niveles completados, estrellas, pistas y registros del reto diario, se guarda en tu dispositivo y se sincroniza mediante tu iCloud cuando está disponible. Las preferencias de sonido, vibración, apariencia y recordatorios se guardan localmente. Puedes jugar sin conexión; la sincronización necesita internet.</p>
+      <h3>Game Center opcional</h3>
+      <p>Si tienes una sesión de Game Center activa, Voltios comunica logros y puntuaciones a Apple asociados a tu jugador. No necesitas iniciar sesión para jugar. Los logros corresponden a la campaña original; Laboratorio no añade logros nuevos de Game Center. Consulta las opciones de tu cuenta de Apple para gestionar estos servicios.</p>
+      <h3>Analítica de TelemetryDeck</h3>
+      <p>Usamos TelemetryDeck, con servidores en la Unión Europea, para entender el uso del juego. Recibe eventos como inicio, finalización o abandono de niveles, uso de pistas, reto diario y resultado del permiso de notificaciones. Pueden incluir el identificador del nivel o diario, estrellas, uso de pistas y racha.</p>
+      <p>El SDK añade identificadores anonimizados mediante hash y contexto técnico, como versión de la app y del sistema, dispositivo e idioma/región. Su manifiesto declara datos de interacción con el producto e identificador de dispositivo para analítica, no vinculados y no usados para tracking. No enviamos texto libre ni nombres de jugadores en los parámetros propios. Anonimización no significa ausencia de identificadores; no usamos estos datos para seguimiento publicitario.</p>
+      <p>Más información sobre el tratamiento del proveedor: <a href="https://telemetrydeck.com/privacy/">privacidad de TelemetryDeck</a>.</p>
+      <h3>Compra y familias</h3>
+      <p>Apple procesa la compra única de la app. Voltios no accede a tus datos de pago y no tiene compras dentro de la app ni suscripciones. La puerta parental protege salidas como compartir, no una compra dentro del juego. La app está pensada para familias; los tratamientos anteriores también deben tenerse en cuenta al usarla con menores.</p>
+      <h3>Esta web y el soporte</h3>
+      <p>Esta web guarda en tu navegador la preferencia de idioma y utiliza fuentes de sistema y recursos propios, sin analítica añadida de la web. Puedes borrar esa preferencia eliminando los datos del sitio. GitHub Pages aloja la web y puede tratar datos técnicos de las solicitudes según su <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">política de privacidad</a>.</p>
+      <p>Si escribes a soporte, recibimos tu dirección de correo y el contenido que envíes para atender la consulta. No envíes contraseñas, datos de pago ni información personal innecesaria.</p>
+      <h3>Contacto y servicios de Apple</h3>
+      <p>Para consultas sobre datos y solicitudes de privacidad, escribe a <a href="mailto:ignacionoguerol@gmail.com">ignacionoguerol@gmail.com</a>. iCloud, Game Center y App Store están sujetos también a la <a href="https://www.apple.com/legal/privacy/">política de privacidad de Apple</a> y a los ajustes de tu cuenta.</p>
+      <p class="muted">Texto para Voltios 2.0 · Actualizado el 9 de septiembre de 2026.</p>
     </div>
-    <div class="en">
-      <h2>Voltios Privacy Policy</h2>
-      <p><strong>Voltios does not collect, store or share any personal data.</strong></p>
-      <ul>
-        <li><strong>No accounts</strong>: no sign-up or login required.</li>
-        <li><strong>No tracking or ads</strong>: the app contains no analytics, advertising
-        or third-party trackers.</li>
-        <li><strong>Offline</strong>: Voltios works fully offline and sends no information to
-        any server.</li>
-        <li><strong>On your device</strong>: your progress (stars, completed levels) and
-        settings (sound, haptics) are stored only on your device.</li>
-        <li><strong>Purchases</strong>: the one-time purchase to unlock the full game is
-        processed by Apple via StoreKit. Apple handles payment; Voltios never accesses your
-        payment data.</li>
-        <li><strong>Children</strong>: the app is family-friendly and collects no data from
-        anyone, including children. Purchases are protected by a parental gate.</li>
-      </ul>
-      <p>Questions? Email us at
-      <a href="mailto:ignacionoguerol@gmail.com">ignacionoguerol@gmail.com</a>.</p>
-      <p style="color:#6f6a61">Last updated: June 2026.</p>
+    <div class="en" lang="en">
+      <h2>How Voltios handles data</h2>
+      <p>Voltios does not require its own account and contains no ads or advertising tracking. Playing, saving progress and improving the game involve the data and services described below.</p>
+      <h3>Progress and preferences</h3>
+      <p>Progress, including completed levels, stars, hints and daily challenge records, is saved on your device and synced through your iCloud when available. Sound, haptic, appearance and reminder preferences are stored locally. You can play offline; syncing needs internet.</p>
+      <h3>Optional Game Center</h3>
+      <p>If you have an active Game Center session, Voltios sends achievements and scores to Apple associated with your player. Signing in is not required to play. Achievements belong to the original campaign; Laboratory does not add new Game Center achievements. See your Apple Account options to manage these services.</p>
+      <h3>TelemetryDeck analytics</h3>
+      <p>We use TelemetryDeck, with servers in the European Union, to understand how the game is used. It receives events such as starting, completing or leaving levels, using hints, daily challenges and the notification permission result. These may include the level or daily challenge identifier, stars, hint use and streak.</p>
+      <p>The SDK adds identifiers anonymized through hashing and technical context such as app and OS versions, device and language/region. Its manifest declares product interaction and device identifier data for analytics, not linked and not used for tracking. We do not send free text or player names in our own parameters. Anonymization does not mean an absence of identifiers; we do not use this data for advertising tracking.</p>
+      <p>Learn more about the provider's data handling in <a href="https://telemetrydeck.com/privacy/">TelemetryDeck's privacy policy</a>.</p>
+      <h3>Purchase and families</h3>
+      <p>Apple processes the one-time app purchase. Voltios does not access your payment details and has no in-app purchases or subscriptions. The parental gate protects exits such as sharing, not an in-game purchase. The app is intended for families; the data handling described above also needs to be considered when children use it.</p>
+      <h3>This website and support</h3>
+      <p>This website stores your language preference in your browser and uses system fonts and its own assets, with no added website analytics. You can remove the preference by clearing site data. GitHub Pages hosts the website and may process technical request data under its <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">privacy policy</a>.</p>
+      <p>If you contact support, we receive your email address and the content you send to respond to your enquiry. Do not send passwords, payment details or unnecessary personal information.</p>
+      <h3>Contact and Apple services</h3>
+      <p>For data enquiries and privacy requests, email <a href="mailto:ignacionoguerol@gmail.com">ignacionoguerol@gmail.com</a>. iCloud, Game Center and the App Store are also subject to <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a> and your account settings.</p>
+      <p class="muted">Text for Voltios 2.0 · Updated September 9, 2026.</p>
     </div>
-  </div>
-
+  </main>
   <footer>
-    <a href="index.html"><span class="es">Inicio</span><span class="en">Home</span></a>
-    <a href="support.html"><span class="es">Soporte</span><span class="en">Support</span></a>
-    <div style="margin-top:8px">© 2026 Voltios</div>
+    <a href="index.html"><span class="es" lang="es">Inicio</span><span class="en" lang="en">Home</span></a>
+    <a href="support.html"><span class="es" lang="es">Soporte</span><span class="en" lang="en">Support</span></a>
+    <p>© 2026 Voltios</p>
   </footer>
 </div>
 <script src="script.js"></script>

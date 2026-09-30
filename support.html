@@ -4,75 +4,67 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Voltios — Soporte / Support</title>
-<meta name="description" content="Soporte de Voltios: contacto y preguntas frecuentes.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<meta name="description" content="Soporte de Voltios: compra de la app, progreso, Laboratorio, privacidad y contacto.">
+<link rel="canonical" href="https://inoguerols.github.io/voltios-web/support.html">
+<link rel="icon" type="image/png" href="app-icon.png">
+<link rel="apple-touch-icon" href="app-icon.png">
 <link rel="stylesheet" href="style.css">
 </head>
 <body class="lang-es">
 <div class="wrap">
-  <div class="lang-switch">
-    <button data-lang="es" onclick="setLang('es')">Español</button>
-    <button data-lang="en" onclick="setLang('en')">English</button>
-  </div>
-
+  <nav class="lang-switch" aria-label="Idioma / Language">
+    <button type="button" lang="es" data-lang="es" aria-pressed="true" onclick="setLang('es')">Español</button>
+    <button type="button" lang="en" data-lang="en" aria-pressed="false" onclick="setLang('en')">English</button>
+  </nav>
   <header class="hero">
-    <div class="logo">
-      <svg viewBox="0 0 100 100" aria-hidden="true">
-        <path d="M10 56 H28 M72 56 H90" fill="none" stroke="#ffb803" stroke-width="6" stroke-linecap="round"/>
-        <path d="M28 56 L60 37" fill="none" stroke="#2ec4b5" stroke-width="9" stroke-linecap="round"/>
-        <circle cx="28" cy="56" r="8" fill="#2ec4b5"/>
-        <circle cx="72" cy="56" r="8" fill="#2ec4b5"/>
-      </svg>
-    </div>
-    <h1><span class="es">Soporte</span><span class="en">Support</span></h1>
+    <img class="logo" src="app-icon.png" width="84" height="84" alt="">
+    <h1><span class="es" lang="es">Soporte</span><span class="en" lang="en">Support</span></h1>
+    <p class="es" lang="es">¿Algo no conecta? Cuéntanos qué ocurre.</p>
+    <p class="en" lang="en">Something not connecting? Tell us what happened.</p>
+    <p><a href="mailto:ignacionoguerol@gmail.com">ignacionoguerol@gmail.com</a></p>
   </header>
-
-  <div class="card" style="text-align:center">
-    <div class="es"><p>Estamos encantados de ayudarte. Escríbenos a:</p></div>
-    <div class="en"><p>We're happy to help. Email us at:</p></div>
-    <p><a class="btn" href="mailto:ignacionoguerol@gmail.com">ignacionoguerol@gmail.com</a></p>
-    <div class="es"><p style="color:#6f6a61">Solemos responder en 1–2 días.</p></div>
-    <div class="en"><p style="color:#6f6a61">We usually reply within 1–2 days.</p></div>
-  </div>
-
-  <div class="card">
-    <div class="es">
+  <main id="content" class="card">
+    <div class="es" lang="es">
       <h2>Preguntas frecuentes</h2>
-      <h3>¿Cómo desbloqueo el juego completo?</h3>
-      <p>Los mundos 1–3 son gratis. Toca un mundo bloqueado (4, 5 o 6) en el mapa: tras una
-      breve puerta parental verás la pantalla de compra. Es un <strong>pago único</strong>,
-      sin suscripciones.</p>
-      <h3>Compré el juego y cambié de dispositivo</h3>
-      <p>Abre la pantalla de compra y pulsa <em>«Restaurar compra»</em>. Al estar asociada a
-      tu ID de Apple, se recupera sin pagar de nuevo (incluye «En familia»).</p>
-      <h3>¿Recopila datos de mis hijos?</h3>
-      <p>No. Voltios no recopila ningún dato, no tiene anuncios ni cuentas y funciona sin
-      conexión. Consulta la <a href="privacy.html">política de privacidad</a>.</p>
+      <h3>¿Tengo que comprar mundos por separado?</h3>
+      <p>No. Voltios es una compra única de la app, sin compras dentro de la app ni suscripciones. Los 10 mundos y 78 niveles están incluidos; se abren según la progresión del juego, no mediante pagos.</p>
+      <h3>¿Cómo entro en Laboratorio?</h3>
+      <p>En Voltios 2.0, completa el mundo 5 para abrir los 10 niveles de Laboratorio. Los 68 niveles originales se mantienen. Si ya completaste el mundo 5, Laboratorio estará disponible al actualizar.</p>
+      <h3>Compré la app y cambié de dispositivo</h3>
+      <p>Vuelve a descargar Voltios desde tus compras de App Store con la misma cuenta de Apple. No hay un botón de «Restaurar compra» dentro del juego. La disponibilidad depende de tu cuenta y de App Store; si aparece un cobro inesperado, comprueba la cuenta antes de continuar.</p>
+      <h3>¿Qué pasa con mi progreso y mis logros?</h3>
+      <p>El progreso se guarda localmente y se sincroniza mediante iCloud cuando está disponible. Usa la misma cuenta de iCloud en tus dispositivos. Game Center es opcional y mantiene los logros de la campaña original; Laboratorio no añade logros nuevos de Game Center.</p>
       <h3>¿Funciona sin internet?</h3>
-      <p>Sí, completamente. Solo necesitas conexión para realizar la compra.</p>
+      <p>Sí, puedes jugar sin conexión. La descarga o actualización, la sincronización de iCloud, Game Center y el envío de analítica requieren conexión.</p>
+      <h3>¿Qué datos se tratan?</h3>
+      <p>No hay anuncios ni una cuenta propia de Voltios. TelemetryDeck recibe interacciones de juego, identificadores anonimizados y contexto técnico para analítica, sin seguimiento publicitario. iCloud y Game Center prestan sus servicios cuando están disponibles. Consulta la <a href="privacy.html">política de privacidad</a>.</p>
+      <h3>¿Cómo informo de un problema?</h3>
+      <p>Indica versión de Voltios, modelo de dispositivo, versión de iOS/iPadOS, idioma y pasos para reproducirlo. No envíes contraseñas, datos de pago ni información personal innecesaria. Si falta progreso, evita borrar la app antes de pedir ayuda.</p>
+      <p><a class="btn" href="https://apps.apple.com/es/app/voltios-puzzles-de-circuitos/id6779986359">Ver Voltios en App Store</a></p>
     </div>
-    <div class="en">
+    <div class="en" lang="en">
       <h2>Frequently asked questions</h2>
-      <h3>How do I unlock the full game?</h3>
-      <p>Worlds 1–3 are free. Tap a locked world (4, 5 or 6) on the map: after a short
-      parental gate you'll see the purchase screen. It's a <strong>one-time
-      purchase</strong>, no subscriptions.</p>
-      <h3>I bought the game and switched devices</h3>
-      <p>Open the purchase screen and tap <em>"Restore purchase"</em>. As it's tied to your
-      Apple ID, it restores without paying again (Family Sharing included).</p>
-      <h3>Does it collect my children's data?</h3>
-      <p>No. Voltios collects no data, has no ads or accounts, and works offline. See the
-      <a href="privacy.html">privacy policy</a>.</p>
+      <h3>Do I need to buy worlds separately?</h3>
+      <p>No. Voltios is a one-time app purchase, with no in-app purchases or subscriptions. All 10 worlds and 78 levels are included; they open through gameplay progression, not payments.</p>
+      <h3>How do I enter Laboratory?</h3>
+      <p>In Voltios 2.0, complete World 5 to open Laboratory's 10 levels. The original 68 levels remain. If you already completed World 5, Laboratory will be available after updating.</p>
+      <h3>I bought the app and switched devices</h3>
+      <p>Download Voltios again from your App Store purchases using the same Apple Account. There is no in-game Restore Purchase button. Availability depends on your account and the App Store; if you see an unexpected charge, check your account before continuing.</p>
+      <h3>What happens to my progress and achievements?</h3>
+      <p>Progress is saved locally and synced through iCloud when available. Use the same iCloud account on your devices. Game Center is optional and retains the original campaign achievements; Laboratory does not add new Game Center achievements.</p>
       <h3>Does it work without internet?</h3>
-      <p>Yes, fully. You only need a connection to make the purchase.</p>
+      <p>Yes, you can play offline. Downloading or updating, iCloud sync, Game Center and sending analytics require a connection.</p>
+      <h3>What data is handled?</h3>
+      <p>There are no ads or Voltios accounts. TelemetryDeck receives gameplay interactions, anonymized identifiers and technical context for analytics, without advertising tracking. iCloud and Game Center provide their services when available. See the <a href="privacy.html">privacy policy</a>.</p>
+      <h3>How do I report a problem?</h3>
+      <p>Include your Voltios version, device model, iOS/iPadOS version, language and steps to reproduce the issue. Do not send passwords, payment details or unnecessary personal information. If progress is missing, avoid deleting the app before asking for help.</p>
+      <p><a class="btn" href="https://apps.apple.com/es/app/voltios-puzzles-de-circuitos/id6779986359">View Voltios on the App Store</a></p>
     </div>
-  </div>
-
+  </main>
   <footer>
-    <a href="index.html"><span class="es">Inicio</span><span class="en">Home</span></a>
-    <a href="privacy.html"><span class="es">Privacidad</span><span class="en">Privacy</span></a>
-    <div style="margin-top:8px">© 2026 Voltios</div>
+    <a href="index.html"><span class="es" lang="es">Inicio</span><span class="en" lang="en">Home</span></a>
+    <a href="privacy.html"><span class="es" lang="es">Privacidad</span><span class="en" lang="en">Privacy</span></a>
+    <p>© 2026 Voltios</p>
   </footer>
 </div>
 <script src="script.js"></script>
